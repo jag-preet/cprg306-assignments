@@ -19,6 +19,7 @@ function NewItem() {
                         <div class="mb-2">
                             <input type="text" placeholder="Item name" required="" class="w-full mt-1 border-2 border-gray-300 p-2 rounded-lg font-sans" value={name} onChange={(e)=>{setName(e.target.value)}} />
                             </div>
+                        <div class="flex justify-between">
                             <input type="number" min="1" max="99" required="" value={quantity} onChange={(e)=>{setQuantity(e.target.value)}} class="w-20 ml-1 border-2 border-gray-300 p-2 rounded-lg font-sans"/>
                             <select class="ml-1 border-2 border-gray-300 p-2 rounded-lg font-sans" value={category} onChange={(e)=>{setCategory(e.target.value)}}>
                                 <option value="" disabled="">Category</option>
